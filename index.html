@@ -253,7 +253,7 @@
   </div>
 </div>
 
-<div class="indicators" id="dots"></div>
+<div // class="indicators" id="dots"></div>
 
 <!-- Step 3: Add JavaScript at the END of body -->
 <script>
@@ -263,19 +263,19 @@
     const slides = Array.from(slidesEl.children);
     const nextBtn = document.getElementById('next');
     const prevBtn = document.getElementById('prev');
-    const dotsEl = document.getElementById('dots');
+   // const dotsEl = document.getElementById('dots');
     let index = 0;
     let timer = null;
     const delay = 4000; // 4 seconds
 
     // Create dots
-    slides.forEach((_, i) => {
-      const dot = document.createElement('button');
-      dot.className = 'dot';
-      dot.addEventListener('click', () => goTo(i));
-      dotsEl.appendChild(dot);
-    });
-    const dots = Array.from(dotsEl.children);
+  //  slides.forEach((_, i) => {
+    //  const dot = document.createElement('button');
+      //dot.className = 'dot';
+      //dot.addEventListener('click', () => goTo(i));
+      //dotsEl.appendChild(dot);
+    //});
+    //const dots = Array.from(dotsEl.children);
 
     function update() {
       slidesEl.style.transform = `translateX(-${index * 100}%)`;
@@ -361,6 +361,7 @@
 
 </body>
 </html>
+
 
 
 
